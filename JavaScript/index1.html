@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript" src="">
+
+window.onload = function(){
+
+	//declarando vários nomes 
+	let nome_1 = 'Caio';
+	let nome_2 = 'Joao';
+	//...
+
+	// outra opção com array, quando eu delcaro com o let o nome da variável eu dou um atributo pra ela, no caso abaixo lista ou array
+
+	let nome = [];
+	nome[0] = 'Guilherme';
+	nome[1] = 'Thor';
+
+	console.log(nome[0]); 
+
+
+	//pra declarar um objeto eu declaro ele com chaves {}
+	/* trabalhando com objetos: 
+	animal é o objeto declarado e depois do . é a variável/propriedade desse objeto 
+	objeto é aquilo que tem propriedades, podendo ter várias 
+	*/
+	let animal = {};
+
+	animal.nome = 'huck';
+	animal.peso = '21kg';
+	animal.idade = 9;
+	animal['idade'] = 10; //outro tipo de declarar propriedades/variaveis
+
+	//declarando um objeto coma array
+
+	animal.raca = [];
+
+	animal.raca[0] = 'border';
+	animal.raca[1] = 'husky';
+
+	console.log(animal.idade);
+ 	console.log(animal.raca[1]); //como chamar a propriedade do objeto e a posição do array
+
+ 	//typeof() é uma função pra saber o que cada elemento é, só printar com o console.log
+ 	// declarando um objeto com {} ou com [] pelo typeof ele vai falar que ambos são objetos porque se comportam da mesma forma
+
+ 	let dev = "caio";
+
+ 	console.log(typeof(dev));//nesse caso vai ser um tipo string... em outros casos vai ser number ou boolean
+
+}
+
+// para quebra de linha precisa colocar o +
+
+//console.log("Olá mundo");	
+// console é um objeto, quando eu coloco um ponto eu chamo a função log
+
+//alert("olá mundo");
+
+/*
+window.onload = function(){
+	alert("Oilá mundo");
+}
+
+
+window.onload = function(){
+
+	let nome,nume,bool;
+	nome = 'Caio';
+	nume = 10;
+	bool = false;
+
+
+	let dog = 'Huck';
+
+	console.log("Olá "+ nome + nume + bool);
+	alert(dog)
+}
+*/
+
+</script>
+</body>
+</html>
