@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8">
+<script type="text/javascript" src="js/main.js"></script>
+<head>
+	<title>Minha Páginda</title>
+</head>
+<body onload="onload()">
+	
+	<button type="button" onclick="clicou()">Clique aqui</button>
+	<h3 id="agradecimento" onclick="redirecionar()">Se prepare</h3>
+	
+	<!-- Uma forma de fazer com o ID
+	<p id="id_p_mouse" onmouseover="mouse()" onmouseout="voltar()">Passe o mouse aqui</p>-->
+
+	<!-- uma forma de fazer com o this para ter mais de uma tag html com a mesma função mas com eles separados-->
+	<p onmouseover="mouse(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+
+	<p onmouseover="mouse(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+	<select onchange="funcaoChange(this)">
+		<option value="1">valor1</option>
+		<option value="2">valor2</option>
+		<option value="3">valor3</option>
+	</select>
+	
+</body>
+</html>
